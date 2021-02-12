@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\HTML\\links-and-images"
+		},
+		{
+			"path": "..\\..\\..\\..\\hello-css"
+		},
+		{
+			"path": "..\\..\\..\\..\\css-box-model"
+		},
+		{
+			"path": "..\\..\\..\\..\\css-selectors"
+		}
+	],
+	"settings": {}
+}

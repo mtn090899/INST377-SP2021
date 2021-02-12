@@ -2,3 +2,66 @@
 <!-- Include your stylesheet in the head -->
 <!-- Include your script.js right before the </body> tag -->
 <!-- Make a carousel of four mochi images that cycle, based on the readings from javascript.info -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Matthew Nguyen Lab 3</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
+    <link rel='stylesheet' href='styles.css?v=2'/>
+  </head>
+<body onload="setSliderItem(0)">
+
+<div class="slider">
+  <div class="slide" data-background = "images/onigiri_1.png"></div>            <!--Slide 1-->
+  <p class="caption caption-0">
+    This is a rice boi
+    <br><small>His name is Harold</small>
+  </p>
+  <div class="slide" data-background = "images/onigiri_2.png"></div>             <!--Slide 2-->
+  <p class="caption caption-1">
+    This is his brother
+    <br><small>He is also Harold</small>
+  </p>
+  <div class="slide" data-background = "images/onigiri_3.png"></div>             <!--Slide 3-->
+  <p class="caption caption-2">
+    This is Harolds ex-wife
+    <br><small>She had an affair.</small>
+  </p>
+  <div class="slide" data-background = "images/onigiri_4.png"></div>              <!--Slide 4-->
+  <p class="caption caption-3">
+    This is also Harold
+    <br><small>Harold's ex-wife had an affair with him</small>
+  </p>
+  <div class="slide" data-background = "images/roll_1.png"></div>                  <!--Slide 5-->
+  <p class="caption caption-4">
+    This is Herold.
+    <br><small>He doesn't associate with Harolds</small>
+  </p>
+  <div class="slide" data-background = "images/roll_2.png"></div>                  <!--Slide 6-->
+  <p class="caption caption-5">
+    This is Harold
+    <br><small>No relation.</small>
+  </p>
+  <div class="slide" data-background = "images/roll_3.png"></div>                   <!--Slide 7-->
+  <p class="caption caption-6">
+    This is just a roll.
+  </p>
+  
+  <div class = "navbar">
+    <button type="button" onclick="setSliderItem(currentSlideIndex-1)">Left</button>
+    <button type="button" onclick="setSliderItem(currentSlideIndex+1)">Right</button>
+  </div>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+
+
