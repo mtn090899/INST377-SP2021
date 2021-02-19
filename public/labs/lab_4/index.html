@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Nguyen Lab 4</title>
+    <link rel='stylesheet' href='styles.css'/>
+</head>
+<body>
+    
+</body>
+</html>
+
+<body>
+<h1>Matthew Nguyen's Lab 4</h1>
+
+<form action="/api" method="post">
+    
+    <ul class="flex-outer">
+      <li>
+        <label for="fname">First Name</label>
+        <input name="fname" type="text" id="fname" >
+      </li>
+      <li>
+        <label for="lname">Last Name</label>
+        <input name="lname" type="text" id="lname" >
+      </li>
+      <li>
+        <label for="email">Email</label>
+        <input name="email" type="email" id="email" >
+      </li>
+      <li>
+        <label for="phone">Phone</label>
+        <input name="phone" type="tel" id="phone" >
+      </li>
+      <li>
+        <label for="messages">Message</label>
+        <textarea name = "message" rows="5" cols='33' id="messages" placeholder="This is some default message text"></textarea>
+      </li>
+      <li>
+    
+        <p>Age</p>
+        <ul class="flex-inner">
+            <li>
+                <input name="eighteen-to-thirtyfive" type="checkbox" id="eighteen-to-thirtyfive">
+                <label for="eighteen-to-thirtyfive">18-35</label>
+              </li>
+              <li>
+                <input name="thirtyfive-to-fifty" type="checkbox" id="thirtyfive-to-fifty">
+                <label for="thirtyfive-to-fifty">35-50</label>
+              </li>
+              <li>
+                <input name="fifty-to-sixtyfive" type="checkbox" id="fifty-to-sixtyfive">
+                <label for="fifty-to-sixtyfive">50-65</label>
+              </li>
+              
+          
+        </ul>
+      </li>
+
+      <li>
+        <button name="submit" type="submit" id="submit">Submit Form</button>
+      </li>
+
+    </ul>
+
+
+
+
+  </form>
+  <script src="script.js"></script>
+</body>
