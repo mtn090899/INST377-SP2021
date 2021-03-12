@@ -10,4 +10,27 @@
     - TRY THIS: type "doc" at the top of this file and press "tab" for Emmet autocomplete support
 -->
 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 1 - Matthew Nguyen, Katherine Vo, Emily Zheng</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container is-max-desktop">
+        <h1>Matthew Nguyen, Katherine Vo, Emily Zheng</h1>
+        <form action='/api' method='post'>
+            <div class='form-row'>
+                <label for='type-restaurant'>Type of Restaurant:</label>
+                <input id='type-restaurant' name='type-restaurant' type='text' placeholder="Search Type of Restaurant">
+            </div>
+        </form>
+        <div class="suggestions"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

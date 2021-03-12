@@ -1,3 +1,58 @@
+async function windowActions() {
+  const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'
+  const request = await fetch(endpoint);
+  const food_info = await request.json();
+  
+  function findMatches(wordToMatch, food_info) {
+      return food_info.filter(result => {
+          const regex = new RegExp(wordToMatch, 'gi');
+          return result.category.match(regex);
+      });
+  }
+
+  const searchInput = document.querySelector('input');
+  const suggestions = document.querySelector('.suggestions')
+
+  function displayMatches(event) {
+      const matchArray = findMatches(event.target.value, food_info);
+      const html = matchArray.map(result => {      
+          const regex = new RegExp(event.target.value, 'gi');
+          const category = result.category.replace(regex, `<span class="title-case">${event.target.value}</span>`);
+
+          return `
+              <li>
+              <span class= "place">
+              <div class="list-name">
+                  ${result.name}
+              </div>
+              ${category}<br/>
+              <address>
+              ${result.address_line_1}<br/>
+              ${result.city}<br/>
+              ${result.zip}<br/>
+              </address>
+              </span>
+              </li>
+              `
+          ;
+      }).join('');
+      suggestions.innerHTML = html;
+  }
+
+  searchInput.addEventListener('keyup', (evt) => { displayMatches(evt) });
+}
+
+window.onload = windowActions;
+
+
+
+
+
+
+
+
+
+
 function convertRestaurantsToCategories(restaurantList) {
   // process your restaurants here!
   return list;
