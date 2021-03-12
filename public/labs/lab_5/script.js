@@ -21,7 +21,9 @@ async function dataHandler(mapObjectFromFunction) {
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
+    console.log('form submitted')
     const filtered = data.filter((record) => record.zip.includes(search.value));
+    console.log(filtered)
     filtered.forEach((item) => {
       const longLat = item.geocoded_column_1.coordinates;
       console.log('markerLongLat', longLat[0], longLat[1]);

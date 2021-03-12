@@ -23,15 +23,10 @@
     "recursive-readdir": "^2.2.2"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "cypress": "^6.5.0",
-    "cypress-html-validate": "^1.2.2",
-=======
     "@babel/core": "^7.12.17",
     "@babel/register": "^7.12.13",
     "cypress": "^6.5.0",
     "cypress-html-validate": "^1.3.1",
->>>>>>> 44bd7ef0cd348ea6aef94554251d3fe6a0efbcf4
     "cypress-wait-until": "^1.7.1",
     "email-validator": "^2.0.4",
     "eslint": "^7.18.0",
