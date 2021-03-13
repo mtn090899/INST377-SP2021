@@ -45,5 +45,5 @@ async function windowActions() {
   await dataHandler(map);
 
 }
-
+// just a test
 window.onload = windowActions;
