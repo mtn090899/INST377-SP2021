@@ -19,19 +19,23 @@
 
 
 <body>
-    <div class="container is-max-desktop">
+    <div class="container column is-max-desktop">
+        <div class = "column info"></div>
         <h1>Matthew Nguyen</h1>
-        <form action='/api' method='post'>
-        </form>
         <div class="suggestions"></div>
     </div>
+
     <div class="columns">
         <div class="column">
-            <form action="">
+            <form action="" id="search-form">
                 <label for="search"></label>
                 <input type="text" id="search" name="search">
+                <button type = "submit">Submit</button>
+                
             </form>
+            <ul class = "target-list"></ul> 
         </div>
+        
         <div class="column">
             <div id="mapid"></div>
         </div>
